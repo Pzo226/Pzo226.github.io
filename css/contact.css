@@ -1,5 +1,6 @@
 body {
-  background-image: url('https://images.pexels.com/photos/9063025/pexels-photo-9063025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  color: gray;
+  background-color: gray;
   min-height: 100%;
   width: 100%;
   position: absolute;
@@ -8,6 +9,10 @@ body {
   background-attachment: fixed;
 } 
 
+.h-100 {
+  color: gray;
+}
+
 .d-flex1 {
   min-height: 100%;
   width: 100%;
@@ -15,6 +20,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 .d-flex {
@@ -72,3 +78,16 @@ button.dropbtn {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #666;}
+
+.bg-dark {
+  background-color: #b93434!important;
+}
+
+.navbar {
+  color: #b93434;
+
+}
+
+.navbar-expand-lg {
+  color: #b93434;
+}

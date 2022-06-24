@@ -1,0 +1,228 @@
+   /* Dropdown Button */
+   .dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    float: right;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: orange;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: blue;}
+
+
+
+  @import url(https://fonts.googleapis.com/css?family=Nunito);
+
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body { 
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Nunito;
+  }
+  
+  h1 {
+     font-size: 250%;
+     color: blue;
+  }
+  
+  p {
+    font-size: 140%;
+    line-height: 150%;
+    color: #333;
+  }
+  
+  .slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    transform-style: inherit;
+    background-color: #667;
+  }
+
+  .slide, {
+    background: 50% 50% / cover;
+    background-color: #667;
+}
+
+  
+  img {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  }
+  
+  img:last-of-type {
+    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+  }
+  
+  .slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+  }
+  
+  .title {
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    background-color: #667
+  }
+  
+  .slide:nth-child(2n) .title {
+    margin-left: 0; 
+    margin-right: auto;
+  }
+  
+  .slide:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .slide, .slide:before {
+    background: 50% 50% / cover;  
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+  }
+  
+  #title {
+    background-image: url("https://lorempixel.com/640/480/abstract/6/");
+    z-index:2;
+  }
+  
+  #title h1 {
+   transform: translateZ(.25px) scale(.75);
+   transform-origin: 50% 100%;
+  
+  }
+  
+  #slide1:before {
+    background-image: url("https://lorempixel.com/640/480/abstract/4/");
+    transform: translateZ(-1px) scale(2);
+  }
+  
+  #slide2 {
+    z-index:2;
+  }
+  
+  #slide3:before {
+    background-image: url("https://lorempixel.com/640/480/abstract/5/");
+    transform: translateZ(-1px) scale(2);
+  }
+  
+  div#title.slide.header {
+    background-color: orange;
+  }
+
+  div#slide1.slide {
+    background-color: orange;
+  }
+  div#slide2.slide {
+    background-color: orange;
+    float: right;
+  }
+  div#slide3.slide {
+    background-color: orange;
+  }
+
+  div.title {
+    float: right;
+  }
+
+  header {
+    background-color: orange;
+  }
+
+  /* designing the text*/
+  h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: #667;
+    text: center;
+  }
+  /*creating the shake animation*/
+    
+  :hover h2{
+    animation:  shake 2.8s  ;
+    text: center:
+  }
+  
+  @keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    25%{
+      transform: translateX(25px);
+    }
+      
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
