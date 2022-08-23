@@ -5,11 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/contact.css">
+  <script src="https://kit.fontawesome.com/8095dfc684.js" crossorigin="anonymous"></script>
+
 
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <div class="card">
+    
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -18,28 +21,41 @@
         <li style="float:right"><a class="active" href="/about.html">About</a></li>
       </ul> 
     </nav>
-  </header>
-  <div class="card">
+    
+    
     <div class="container">
+      
       <h2 class="title">
         <span class="title-word title-word-1">con</span>
         <span class="title-word title-word-2">ta</span>
         <span class="title-word title-word-3">ct</span>
         <span class="title-word title-word-4">me</span>
+        <span>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">click me<i class="fa-solid fa-address-book fa-2xl"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <p>My information</p>
+              <p>Email jacoryarmstrong@gmail.com</p>
+              <p>Tel 2312063228</p>
+              <P>Mailing address 671 e apple ave</P>
+            </div>
+          </div>
+        </span>
       </h2>
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" placeholder="First Name" required>
-        </div>
+    <form action="https://formspree.io/f/mjvlzanw" method="post">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="bruh" required>
+          </div>
       </div>
-  
+      
       <div class="col">
         <div class="form-group">
           <label>Lastname</label>
-          <input type="text" placeholder="Lastname" required>
+          <input type="text" placeholder="man" required>
         </div>
       </div>
   
@@ -53,7 +69,7 @@
       <div class="col">
         <div class="form-group">
           <label>Phone</label>
-          <input type="text" placeholder="231-787-7878" required>
+          <input type="tel" placeholder="231-787-7878" required>
         </div>
       </div>
   
@@ -68,8 +84,10 @@
         <input type="submit" value="Submit">
       </div>
     </div>
-  </div>
+  </form>
+</div>
 
+  
   <!-- <form>
     <div>
 
@@ -167,8 +185,8 @@
 
 
   </form> -->
-  <script src="/JS/practice.js">
+  
 
-  </script>
+  <script src="/JS/contact.js"></script>
 </body>
 </html>
