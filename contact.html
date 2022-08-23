@@ -1,175 +1,192 @@
-
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>All About Jacory Armstrong-Jamerson</title>
-
-    <link rel="stylesheet" href="css/contact.css">
-    <script src="https://kit.fontawesome.com/8095dfc684.js" crossorigin="anonymous"></script>
-        
-
-    <!-- Bootstrap core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#7952b3">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/contact.css">
+  <script src="https://kit.fontawesome.com/8095dfc684.js" crossorigin="anonymous"></script>
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
+  <title>Document</title>
+</head>
+<body>
+  <div class="card">
     
-    <!-- Custom styles for this template -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/music.html">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li style="float:right"><a class="active" href="/about.html">About</a></li>
+      </ul> 
+    </nav>
     
-  </head>
-  <body class="d-flex1 flex-column h-100">
     
-<header>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/"><img src="images/firstlogo.png" width="114" height="50" alt="Jacory Armstrong Logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa-solid fa-ellipsis"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <nav class="dropdown">
-          <button onclick="myFunction()" class="dropbtn"><i class="fa-brands fa-battle-net"></i></button>
-    
-          <div id="mainbox">
-    
+    <div class="container">
+      
+      <h2 class="title">
+        <span class="title-word title-word-1">con</span>
+        <span class="title-word title-word-2">ta</span>
+        <span class="title-word title-word-3">ct</span>
+        <span class="title-word title-word-4">me</span>
+        <span>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">click me<i class="fa-solid fa-address-book fa-2xl"></i></button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="/about.html">about</a>
-              <a href="/contact.html">contact</a>
-              <a href="#"></a>
+              <p>My information</p>
+              <p>Email jacoryarmstrong@gmail.com</p>
+              <p>Tel 2312063228</p>
+              <P>Mailing address 671 e apple ave</P>
             </div>
           </div>
-        </nav>
-    
-    
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn"><i class="fa-brands fa-500px"></i></button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        </span>
+      </h2>
+    </div>
+    <form action="https://formspree.io/f/mjvlzanw" method="post">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="bruh" required>
           </div>
-
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+      </div>
       
+      <div class="col">
+        <div class="form-group">
+          <label>Lastname</label>
+          <input type="text" placeholder="man" required>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" placeholder="email@gmail.com" required>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="231-787-7878" required>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+      </div>
+  
+      <div class="col">
+        <input type="submit" value="Submit">
       </div>
     </div>
-  </nav>
-</header>
-<main class="container"> 
-    <h1 class="visually-hidden">Heroes examples</h1>
-    <div class="b-example-divider"></div>
-<!-- Begin page content -->
-<div class="container contact-form px-5 py-5 my-5 text-center">
-  <div class="contact-image" >
-    <img src="https://img.icons8.com/color/2x/gmail--v2.gif" alt="">
-    <!-- <i class="fa-duotone fa-crow fa-lg" style="--fa-secondary-opacity: 1.0; --fa-primary-color: dodgerblue; --fa-secondary-color: gold;"></i>      -->
-  </div>
-  <p></p>
-  <form action="https://formspree.io/f/mjvlzanw" method="post">
-     <div class="row">
-          <div class="col-md-6">
-              <div class="form-group">
-                  <input type="Fname" name="FName" class="form-control" placeholder="First Name *" value="" required />
-              </div>
-              <div class="form-group">
-                  <input type="Lname" name="LName" class="form-control" placeholder="Last Name *" value="" required />
-              </div>
-              <div class="form-group">
-                  <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required />
-              </div>
-              <div class="form-group">
-                  <input type="tel" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" required />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <textarea name="txtMsg" class="form-control" placeholder="Your Message or reasoning behind email *" style="width: 100%; height: 150px;"></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-            </div>
-      </div>
   </form>
 </div>
 
-  <!-- FOOTER -->
-  <footer class="w-100 py-4 flex-shrink-0" style="background-color: #000000">
-    <div class="container py-4">
-      <div class="row gy-4 gx-5">
-        <div class="col-lg-4 col-md-6">
-          <h5 class="h1 text-white">Jacory's Story</h5>
-          <p class="small text-muted">My life my story my journy</p>
-          <p class="small text-muted mb-0"><script>document.write(new Date().getFullYear())</script> &copy; Copyrights. All rights reserved.
-            <a class="text-primary" href="/">jacoryarmstrong.com</a></p>
-        </div>
-        <div class="col-lg-2 col-md-6">
-          <h5 class="text-white mb-3">Quick links</h5>
-          <ul class="list-unstyled text-muted">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Get started</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6">
-          <h5 class="text-white mb-3">My Brands</h5>
-          <ul class="list-unstyled text-muted">
-            <li><a href="https://brianclincy.com">Mentor Brian Clincy</a></li>
-            <li><a href="https://www.youtube.com/channel/UCjUy5GbylYJC6kxJZYRwwVA">Rio Da Real OG</a></li>
-            <li><a href="https://www.instagram.com/destodubb/?hl=en#">Destodubb off the Cough</a></li>
-            <li><a href="https://www.instagram.com/exclusivedeliveryco/?hl=en">Exclusivedeliveryco</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h5 class="text-white mb-3">Newsletter</h5>
-          <p class="small text-muted">Sign up for my newsletter. Let's connect!</p>
-          <form action="#">
-            <div class="input-group mb-3">
-              <input class="form-control" type="text" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
-            </div>
-          </form>
-        </div>
-      </div>
+  
+  <!-- <form>
+    <div>
+
+      <label for="fname">first name</label>
+      <input type="text" id="fname" name="fname" placeholder="firstname" required>
     </div>
-  </footer>
+      
+    <br>
+
+    <div>
+
+      <label for="lname">first name</label>
+      <input type="text" id="lname" name="lname" placeholder="lastname" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="pass">password</label>
+      <input type="password" id="pass" name="pass" maxlength="12" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="email">email:</label>
+      <input type="email" id="email" name="email" placeholder="Spants@gmail.com"> 
+    </div>
+    <br>
+
+    <div>
+      <label for="phone">phone #</label>
+      <input type="tel" id="phone" name="phone" placeholder="(231-647-7364)"> 
+    </div>
+
+    <br>
+
+    <div>
+      <label for="bdate">birthdate:</label>
+      <input type="date" id="bdate" name="bdate">
+
+    </div>
+    <br>
+
+    <div>
+      <label for="qauntity">qauntity</label>
+      <input type="number" id="qauntity" name="qauntity" min="0" max="99" value="1">
+
+    </div>
+
+    <div>
+      <label for="title">title:</label>
+
+      <label for="Mr.">Mr.</label>
+      <input type="radio" id="Mr." name="title" value="Mr.">
+      
+      <label for="Mrs.">Mrs.</label>
+      <input type="radio" id="Mrs." name="title" value="Mrs.">
+      
+      <label for="PhD.">PhD.</label>
+      <input type="radio" id="PhD." name="title" value="PhD.">
+      
+    </div>
+
+    <br>
+
+    <div>
+      <label for="payment">payment</label>
+      <select id="payment" name="payment">
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="giftcard">giftcard</option>
+      </select>
+
+    </div>
+    
+    <br>
+
+    <div>
+      <label for="subscribe">subscribe</label>
+      <input type="checkbox" id="subscribe" name="subscribe">
+    </div>
 
 
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="/JS/index.js"></script>
+      
 
-</main>
-  </body>
+    <div>
+      <input type="reset">
+    </div>
+    
+    <div>
+      <input type="submit">
+    </div>
+
+
+
+  </form> -->
+  
+
+  <script src="/JS/contact.js"></script>
+</body>
 </html>
