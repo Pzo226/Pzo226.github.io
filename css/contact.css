@@ -21,14 +21,15 @@ body {
   padding: px 90px 90px 120px;
   border: 8px solid rgba(0, 0, 0, 0.3);
   box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 33px;
   position: ;
-  margin: 30px 10px 10px 10px;
+  margin: 93px 10px 15px 10px;
   content: "";
   clear: both;
   display: table;
   position: relative;
   padding-bottom: px;
+  height: 100%;
 }
 
 
