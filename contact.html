@@ -16,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="/music.html">News</a></li>
+        <li><a href="/music.html">Music</a></li>
         <li><a href="#">Contact</a></li>
         <li style="float:right"><a class="active" href="/about.html">About</a></li>
       </ul> 
@@ -48,14 +48,14 @@
         <div class="col">
           <div class="form-group">
             <label>First Name</label>
-            <input type="text" placeholder="bruh" required>
+            <input type="text" name="firstname" id="firstname" placeholder="bruh" required>
           </div>
       </div>
       
       <div class="col">
         <div class="form-group">
           <label>Lastname</label>
-          <input type="text" placeholder="man" required>
+          <input type="text" name="lastname" placeholder="man" required>
         </div>
       </div>
   
@@ -69,7 +69,10 @@
       <div class="col">
         <div class="form-group">
           <label>Phone</label>
-          <input type="tel" placeholder="231-787-7878" required>
+          <input type="tel" 
+                   size="50%" 
+                   maxlength="12"
+                   onkeypress="return onlyNumberKey(event)" required/> 
         </div>
       </div>
   
@@ -81,7 +84,8 @@
       </div>
   
       <div class="col">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Send"
+        onclick="return detailssubmit()">
       </div>
     </div>
   </form>

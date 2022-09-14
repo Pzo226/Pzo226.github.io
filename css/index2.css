@@ -132,12 +132,14 @@ transition: .5s;
       letter-spacing: 6px;
      }
      .social {
-         position: absolute;
-         bottom: 20px;
-         z-index: 10;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+        position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    right: 370px;
+    display: flex;
+    top: 250px;
 
      }
      .social li { 
@@ -258,7 +260,7 @@ transition: .5s;
   /* Links inside the dropdown */
   .dropdown-content a {
     color: blue;
-    padding: 12px 16px;
+   padding: 4px 11px;
     text-decoration: none;
     display: block;
   }
