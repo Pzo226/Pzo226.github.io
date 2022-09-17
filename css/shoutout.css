@@ -40,7 +40,7 @@ p {
   cursor: pointer;
   height: 210px;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: ;
 
   display: flex;
   flex-direction: column;
@@ -73,27 +73,29 @@ p {
 }
 
 .bg1 {
-  background: url('https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background: url('https://avatars.githubusercontent.com/u/57840939?v=4');
   background-color: #bf8ac9;
+  opacity: 1.8;
 }
 div.bg1 {
   /* background: url('https://brianclincy.com/images/bclincy_bitemoji.png'); */
   object-fit: cover;
   height: 100%;
   width: 100%;
+  content: fit;
 }
 
 
 .bg2 {
-  background: url('https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background: url('https://avatars.githubusercontent.com/u/57840939?v=4');
   color: #888;
 }
 .bg2 {
   background: url('https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=600');
   color: #888;
 }
-.bg2 {
-  background: url('https://images.pexels.com/photos/1069798/pexels-photo-1069798.jpeg?auto=compress&cs=tinysrgb&w=600');
+.bg4 {
+  background: url('https://cdn.dribbble.com/users/572013/avatars/normal/b2727c161b4173867ab373b330b9838b.jpg?1499420806');
   color: #888;
 }
 .bg2 {
