@@ -282,7 +282,8 @@
     text-align: center;
     font-size: 175%;
     color: #fff;
-    text-shadow: 0 2px 2px #564056;
+    text-shadow: 0 1px 2px #342834;
+
   }
   
   #title {
@@ -312,6 +313,7 @@
   
   div#title.slide.header {
     background-color: #6a913d;
+    background-image: url ('../image/Screenshot2022-09-12 145119.png')
   }
 
   div#slide1.slide {
@@ -331,26 +333,30 @@
 
   header {
     background-color: orange;
+    font-size: 4rem;
   }
-  h2 {
+  .h2 h2{
     font-size: 4rem;
 }
 
   /* designing the text*/
-  h2 {
-    position: relative;
-    bottom: 64px;
-    left: 50px;
+   h2 {
+    position: absolute;
+    bottom: 88px;
+    left: 432px;
     font-size: 4rem;
     color: #667;
-    top: -96px;
+    top: 135px;
+    z-index: 4;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 6.2;
+    text-shadow: 0 3px 4px rgba(1, 1, 1, .7);
   }
   /*creating the shake animation*/
     
   :hover h2{
-    animation:  shake 2.8s  ;
-    text: center;
-    font-size: 4rem;
+  
   }
 
   .fa-solid.fa-circle-down {
@@ -369,12 +375,13 @@
 
 #circle3 {
   position: relative;
-    top: 627px;
+    top: 443px;
     left: 540px;
     color: #d8dde3;
 }
 body {
   scroll-behavior: smooth;
+  font-size: 4rem;
  }
  
  #down {
@@ -482,6 +489,22 @@ body {
   opacity: 1;
 }
 
+#name {
+  position: absolute;
+    bottom: 88px;
+    left: 432px;
+    font-size: 6rem;
+    color: #667;
+    top: 135px;
+    z-index: 4;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 6.2;
+    text-shadow: 0 3px 4px rgba(1, 1, 1, .7);
+}
+
+
+
   @keyframes jump{
     to{background-position:-900px 0}
     
@@ -517,4 +540,12 @@ body {
     
     
     }
+   /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  div.dropdown {
+    float: none;
+    width: 100%;
+  }
+}
+
   
