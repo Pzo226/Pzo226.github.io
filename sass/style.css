@@ -1,21 +1,35 @@
+@import 'animate.css';
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500italic);
-@-webkit-keyframes eyes {
-  0%, 8.8888888889%, 100% {
-    top: -50px;
-  }
-  17.7777777778% {
-    top: -45px;
-  }
-  91.1111111111% {
-    top: -20px;
-  }
-  57.7777777778%, 88.8888888889% {
-    top: -15px;
-  }
-  66.6666666667% {
-    top: -25px;
-  }
+.animate__animated.animate__bounce {
+  --animate-duration: 1s;
+  animation-delay: 1ss;
 }
+
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: auto;
+}
+.text ul {
+  grid-column: auto;
+}
+.text .animate__bounceIn {
+  animation-delay: 20ms;
+  background-color: pink;
+  color: blue;
+}
+.text .main {
+  display: none;
+}
+.text .dropbtn:hover + .main {
+  display: block;
+  color: red;
+}
+
 @keyframes eyes {
   0%, 8.8888888889%, 100% {
     top: -50px;
@@ -33,14 +47,6 @@
     top: -25px;
   }
 }
-@-webkit-keyframes wings {
-  0%, 88.8888888889%, 100% {
-    top: 70px;
-  }
-  91.1111111111% {
-    top: 60px;
-  }
-}
 @keyframes wings {
   0%, 88.8888888889%, 100% {
     top: 70px;
@@ -49,28 +55,12 @@
     top: 60px;
   }
 }
-@-webkit-keyframes feet {
-  0%, 88.8888888889%, 100% {
-    top: -2px;
-  }
-  91.1111111111% {
-    top: 0px;
-  }
-}
 @keyframes feet {
   0%, 88.8888888889%, 100% {
     top: -2px;
   }
   91.1111111111% {
     top: 0px;
-  }
-}
-@-webkit-keyframes cloud {
-  0% {
-    left: -140px;
-  }
-  100% {
-    left: 280px;
   }
 }
 @keyframes cloud {
@@ -102,6 +92,10 @@ h2 span {
 
 a {
   color: #aaa;
+}
+
+.dropbtn {
+  border-radius: 30px;
 }
 
 .globe {
@@ -167,8 +161,7 @@ a {
   background-color: #f7dbcf;
   box-shadow: inset 0 0 13px rgba(0, 0, 0, 0.3);
   top: 70px;
-  -webkit-animation: wings 4.5s linear infinite;
-          animation: wings 4.5s linear infinite;
+  animation: wings 4.5s linear infinite;
 }
 .globe .bird .body:before {
   left: 0;
@@ -203,8 +196,7 @@ a {
   width: 200px;
   height: 200px;
   background: radial-gradient(ellipse at center, rgba(109, 0, 25, 0) 0%, rgba(130, 1, 31, 0) 35%, #f7dbcf 36%, #f7dbcf 100%);
-  -webkit-animation: eyes 4.5s linear infinite;
-          animation: eyes 4.5s linear infinite;
+  animation: eyes 4.5s linear infinite;
 }
 .globe .bird .body .eye.left {
   left: 15px;
@@ -291,8 +283,7 @@ a {
   border-radius: 50%;
   background-color: #f8c14d;
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.2);
-  -webkit-animation: feet 4.5s linear infinite;
-          animation: feet 4.5s linear infinite;
+  animation: feet 4.5s linear infinite;
 }
 .globe .bird .body .feet:before {
   left: 40px;
@@ -350,16 +341,12 @@ a {
   border-radius: 20px;
   top: -20px;
   z-index: -1;
-  -webkit-animation: cloud 9s linear infinite;
-          animation: cloud 9s linear infinite;
+  animation: cloud 9s linear infinite;
 }
 .globe .cloud.small {
   top: -50px;
   transform: scale(0.6);
-  -webkit-animation-delay: -1.5s;
-          animation-delay: -1.5s;
-  -webkit-animation-duration: 13.5s;
-          animation-duration: 13.5s;
+  animation-duration: 13.5s;
 }
 .globe .cloud:before, .globe .cloud:after {
   position: absolute;
@@ -380,4 +367,6 @@ a {
   top: -10px;
   left: 10px;
   border-radius: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

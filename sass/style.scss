@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 $birdColor: #f7dbcf;
 $birdColor2: #f7dbcf;
 $birdColor3: #f7dbcf;
@@ -34,6 +36,46 @@ $timelineAccumulated: ();
 //  $key:     key/position in timeline
 //  $offset:  optional offset to add to time from timeline (use negative number to subtract)
 // Return:    Percentage value of keyposition in timeline.
+
+.animate__animated.animate__bounce {
+  --animate-duration: 1s;
+  animation-delay: 1ss;
+  
+}
+
+.animate__animated.animate__bounce .dropbtn {
+  background-color: cadetblue;
+}
+
+
+.dropbtn {
+  background-color: pink;
+}
+.dropbtn::after {
+  background-color: rgb(224, 23, 57);
+}
+
+.text {
+  display: grid;
+  grid-template-columns: auto ;
+
+  ul {
+    grid-column: auto;
+  }
+
+  .animate__bounceIn {
+    animation-delay: 20ms;
+    background-color: pink;
+        color: blue;
+  }
+
+  .main {
+    display: none;
+  }
+      
+
+  
+}
 @function tp($key, $offset: 0s) {
   @return (map-get($timelineAccumulated, $key) + $offset) / $totaltime * 100%;
 }
@@ -109,6 +151,10 @@ h2 {
 }
 a {
   color: #aaa;
+}
+
+.dropbtn {
+  border-radius: 30px;
 }
 
 
@@ -368,7 +414,7 @@ a {
     &.small {
       top:-50px;
       transform: scale(.6);
-      animation-delay: -$totaltime/3;
+      // animation-delay: -$totaltime/3;
       animation-duration: $totaltime*3;
     }
     &:before, &:after {
