@@ -24,6 +24,8 @@ header {
 
 
 
+
+
 /* transition: then the property that you want to animate the second proerty is the duration/time time can be seconds or milliseconds */
 /* we can refine this anamation by addinal value for a delay or  or a timing function us a built in function or create your own custom cubic-bezier(); */
 /* or you want to animate somthing forever or in multple steps @ keyframs let you define animation independent or a selector. steps name it give you @keyframe a name  (selector) you can use this animation by refrencing it as the animation name in one for you selectors then the duration and the animation-iteration-count */
